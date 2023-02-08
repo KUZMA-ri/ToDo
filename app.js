@@ -7,13 +7,13 @@ const root = document.getElementById('root');
 const container = createElement('div', 'container');
 const formTodo = createElement('form', 'todo');
 const todoTitle = createElement('div', 'todoTitle');
-const deleteAllBtn = createElement('button', 'btn col-3', 'Delete All');
+const deleteAllBtn = createElement('button', 'btn col-3 btn-lg', 'Delete All');
 const nameTodo = createInput('input', 'nameTodo col-6', 'text', 'Enter todo');
-const addBtn = createElement('button', 'btn col-3', 'Add');
+const addBtn = createElement('button', 'btn col-3 btn-lg', 'Add');
 const search = createElement('div', 'searchTodo');
 const res = createElement('p', 'col-3 res', 'All: 0 Completed: 0');
-const showAllBtn = createElement('button', 'btn col-3', 'Show All');
-const showCompleteBtn = createElement('button', 'btn col-3', 'Show Completed');
+const showAllBtn = createElement('button', 'btn col-3 btn-md', 'Show All');
+const showCompleteBtn = createElement('button', 'btn col-3 btn-md', 'Show Completed');
 const searchInput = createInput('input', 'search col-3', 'text', 'Search...');
 
 

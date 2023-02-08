@@ -13,12 +13,14 @@ export function render(arrTodo) {
 
         if(el.isChecked) {
             performedBtn.innerText = '✓';
-            shellTodo.style.backgroundColor = 'grey';
+            performedBtn.style.backgroundColor = '#fff78b';
+            performedBtn.style.boxShadow = 'rgba(0, 0, 0, 0.5) 0px 3px 8px';
+            shellTodo.style.backgroundColor = 'lightgrey';
             textTodo.style.textDecoration = 'line-through';
         };
         
         const dataText = createElement('span', 'dataText', el.date);
-        shellTodo.append(performedBtn, textTodo, closeBtn, dataText);
+        shellTodo.append(performedBtn, textTodo, dataText, closeBtn);
         container.append(shellTodo);
     });
     result()
