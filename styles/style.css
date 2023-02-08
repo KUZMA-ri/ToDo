@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --content-width: 800px;
+    --gutter: 15px;
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3 - var(--gutter) * 2);
+    margin: 0 var(--gutter);
+}
+
+.col-6 {
+    width: calc(100% / 12 * 6 - var(--gutter) * 2);
+    margin: 0 var(--gutter);
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9 - var(--gutter) * 2);
+    margin: 0 var(--gutter);
+}
+
+button {
+    cursor: pointer;
+}
